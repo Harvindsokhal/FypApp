@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="swup.js"></script>
+    <script type ='text/javascript' src ='eel.js'></script>
+    <script type ='text/javascript' src="script.js"></script>
+    <link href="default.css" rel="stylesheet">
+    <title>FYP</title>
+</head>
+
+<body>
+    <div class="main2">
+        <main id="swup" class="transition-scrapper">
+            <div class="links">
+                <a href='/index.html' id='one' class="scrapper-link">Web Scrapper</a>
+                <p>|</p>
+                <a href='/exif.html' class="exif-link">Exif Extractor</a>
+            </div>
+            <div class = 'search-items'>
+                <label class='custom-field'>
+                    <input id='url' type="text" required>
+                    <span class="placeholder">Enter Link...</span>
+                </label>
+                <label class='custom-field1'>
+                    <input id='keyword' type="text" required>
+                    <span class="placeholder1">Username/Page</span>
+                </label>
+            </div>
+            <p id='status'>Successfully Completed!</p>
+            <button id='scrapeButton' onClick='startScrape()' class="submit-button">Start</button>
+        </main>
+    </div>
+</body>
+</html>

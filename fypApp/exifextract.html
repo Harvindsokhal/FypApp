@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="swup.js"></script>
+    <script type='text/javascript' src ='eel.js'></script>
+    <script type='text/javascript' src="script.js"></script> 
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="default.css">
+    <title>FYP</title>
+</head>
+
+<body onload="getExif()">
+    <div class="main">  
+        <main id="swup" class="transition-fade">
+            <p>EXIF Extractor</p>
+            <a href="/index.html"> <input type='image' src="./assets/backarrow.png" class='backarrow' onclick="rotateMe(this);"/></a>
+            <div class="output-log">
+                <p id='imageName'>Image selected:</p>
+                <p id='imageDate'>Date taken:</p>
+                <p id='imageTime'>Time taken:</p>
+                <p id='imageLocation'>Location of Image:</p>
+            </div>
+            <button onclick='getExif()' class="submit-button">Select New Image</button>
+            <button class="submit-button">View on Maps</button>
+        </main>
+    </div>
+</body>
+</html>
